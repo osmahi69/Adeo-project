@@ -1,23 +1,50 @@
+// eslint-disable
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <v-app class="app">
+      <v-app-bar color="#F0F8FF">
+        <template> </template>
+        <v-avatar @click="goToHome()" class="avatar">
+          <!-- <v-img
+            :src="require('./assurup.jpg')"
+            class="grey lighten-2"
+            width="0"
+          /> -->
+        </v-avatar>
+        <v-toolbar-title color="blue" class="ml-3 headerTitle"
+          >Assurup</v-toolbar-title
+        >
+        <template v-slot:extension>
+          <v-tabs align-with-title>
+            <v-tab @click="goToHome()">Home</v-tab>
+            <v-tab @click="goToProducts()">Products</v-tab>
+          </v-tabs>
+        </template>
+      </v-app-bar>
+      <v-container style="height: 1000px">
+        <router-view></router-view>
+      </v-container>
+    </v-app>
   </div>
 </template>
-
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    goToHome () {
+      this.$router.push('/')
+    },
+    goToProducts () {
+      this.$router.push('/products')
+    }
+  }
 }
 </script>
-
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.avatar {
+  cursor: pointer;
+}
+.headerTitle {
+  color: blue;
 }
 </style>
