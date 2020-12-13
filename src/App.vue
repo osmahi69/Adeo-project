@@ -12,6 +12,11 @@
         <v-toolbar-title color="blue" class="ml-3 headerTitle"
           >HALLEY</v-toolbar-title
         >
+        <v-spacer> </v-spacer>
+        <div>
+        <v-icon>person </v-icon>
+        <span class="name"> {{user.list[0].name}}</span>
+        </div>
         <template v-slot:extension>
           <v-tabs align-with-title>
             <v-tab @click="goToHome()">HOME</v-tab>
@@ -27,6 +32,8 @@
 </template>
 <script>
 import stores from '@/assets/data/stores.json'
+import user from '@/assets/data/user.json'
+import { mapState } from 'vuex'
 
 export default {
   name: 'App',
@@ -38,12 +45,20 @@ export default {
       this.$router.push('/store')
     }
   },
+  computed: {
+    ...mapState(['user'])
+  },
   mounted () {
     this.$store.dispatch('stores/setValue', { list: stores })
+    this.$store.dispatch('user/setValue', { list: user })
   }
 }
 </script>
 <style>
+.name {
+  color: grey;
+  padding-right: 10px;
+}
 .avatar {
   cursor: pointer;
 }
