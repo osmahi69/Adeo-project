@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 
 import Home from '@/components/Home.vue'
 import Store from '@/components/Store.vue'
+import newStore from '@/components/newStore.vue'
+
 import store from '../store'
 
 
@@ -13,6 +15,10 @@ const routes = [
   {
     path: '/',
     component: Home,
+  },
+  {
+    path: '/newstore',
+    component: newStore,
   },
   {
     name:store,
