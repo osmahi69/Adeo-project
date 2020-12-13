@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "storeNumber": 1,
+    "effectiveDate": "02/03/2020"
+  },
+  {
+    "id": 2,
+    "storeNumber": 21,
+    "effectiveDate": "02/01/2020"
+  },
+  {
+    "id": 2,
+    "storeNumber": 34,
+    "effectiveDate": "02/01/2020"
+  }
+]
