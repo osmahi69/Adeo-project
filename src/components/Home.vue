@@ -4,7 +4,7 @@
           <v-card-title class="title">
             {{ bu }}
           </v-card-title>
-          <v-btn color="#452f85" @click="goToStore(1)">
+          <v-btn color="#452f85" @click="goToNewStore(1)">
             <v-icon color="white" class="pr-1"> add_circle_outline</v-icon>
             <span class="buttonTitle">
               Create store
@@ -32,6 +32,9 @@ export default {
   methods: {
     goToStore (storeId) {
       this.$router.push({ path: `/store/${storeId}` })
+    },
+    goToNewStore () {
+      this.$router.push('/newStore')
     }
   },
   computed: {
