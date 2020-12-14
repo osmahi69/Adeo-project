@@ -2,12 +2,7 @@ import Home from '@/components/Home'
 import { shallowMount } from '@vue/test-utils';
 
 
-const wrapper = shallowMount(Home, {
-        propsData: {},
-        mocks: {},
-        stubs: {},
-        methods: {},
-    });
+const wrapper = shallowMount(Home);
 
 
 describe('Component', () => {

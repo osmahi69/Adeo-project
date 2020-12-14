@@ -34,7 +34,7 @@ export default {
   name: 'Store',
   data () {
     return {
-      data: ['id:', 'Number:', 'Date:']
+      data: ['id:', 'Store number:', 'Last update:']
     }
   },
   computed: {

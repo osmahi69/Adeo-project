@@ -42,7 +42,7 @@ export default {
       this.$router.push('/')
     },
     goToStore () {
-      this.$router.push('/store')
+      this.$router.push('/newStore')
     }
   },
   computed: {
