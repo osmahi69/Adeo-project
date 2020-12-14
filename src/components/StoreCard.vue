@@ -1,12 +1,15 @@
 <template>
       <v-row class="listCard">
         <div class="storeCard"  v-for="store in stores.list" :key="store.id" @click="goToStore(store.id)">
-          <v-card-title>
+          <v-card-title class="title">
             Store {{store.storeNumber}}
           </v-card-title>
-          <v-card-subtitle>
-            Created: {{store.effectiveDate}}
+          <v-card-subtitle class="subTitle">
+            Last updated: {{store.effectiveDate}}
           </v-card-subtitle>
+          <v-icon class="trash">
+            restore_from_trash
+          </v-icon>
         </div>
       </v-row>
 </template>
@@ -26,6 +29,25 @@ export default {
 }
 </script>
 <style>
+.trash {
+  padding-left: 180px;
+
+}
+.subTitle {
+    color: #929fb1;
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 0px;
+}
+.title {
+    color: #31303d;
+    font-size: 18px;
+    font-weight: 700;
+}
 .storeCard {
     display: flex;
     flex-direction: column;
