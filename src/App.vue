@@ -2,7 +2,7 @@
   <div id="app">
     <v-app class="app">
       <v-app-bar color="#F0F8FF">
-        <v-avatar @click="goToHome()" class="avatar">
+        <v-avatar @click="goToHome()" class="avatar" >
           <v-img
             :src="require('./assets/Adeo_logo.jpg')"
             class="grey lighten-2 pl-6"
@@ -14,7 +14,7 @@
         >
         <v-spacer> </v-spacer>
         <div>
-        <v-icon>person </v-icon>
+        <v-icon color="blue">person</v-icon>
         <span class="name"> {{user.list[0].name}}</span>
         </div>
         <template v-slot:extension>
@@ -42,7 +42,7 @@ export default {
       this.$router.push('/')
     },
     goToStore () {
-      this.$router.push('/store')
+      this.$router.push('/newStore')
     }
   },
   computed: {
@@ -56,11 +56,13 @@ export default {
 </script>
 <style>
 .name {
-  color: grey;
+  color:blue;
   padding-right: 10px;
+  text-shadow: 0px 0px 5px red;
 }
 .avatar {
   cursor: pointer;
+  text-shadow: 0px 0px 5px red;
 }
 .headerTitle {
   color: blue;

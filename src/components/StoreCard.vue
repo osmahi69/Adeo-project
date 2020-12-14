@@ -5,7 +5,7 @@
             Store {{store.storeNumber}}
           </v-card-title>
           <v-card-subtitle class="subTitle">
-            Last updated: {{store.effectiveDate}}
+            Last update: {{store.effectiveDate}}
           </v-card-subtitle>
           <v-icon class="trash">
             restore_from_trash
