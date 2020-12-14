@@ -1,13 +1,14 @@
 <template>
       <v-row class="listCard">
         <div class="storeCard"  v-for="store in stores.list" :key="store.id" @click="goToStore(store.id)">
+          <v-icon color="blue" large>house</v-icon>
           <v-card-title class="title">
             Store {{store.storeNumber}}
           </v-card-title>
           <v-card-subtitle class="subTitle">
             Last update: {{store.effectiveDate}}
           </v-card-subtitle>
-          <v-icon class="trash">
+          <v-icon class="trash" color="red">
             restore_from_trash
           </v-icon>
         </div>
@@ -35,18 +36,20 @@ export default {
 }
 .subTitle {
     color: #929fb1;
-    margin-top: 8px;
+    margin-top: 15px;
     font-size: 15px;
     line-height: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 0px;
 }
 .title {
-    color: #31303d;
-    font-size: 18px;
-    font-weight: 700;
+  color: #452f85;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 900 !important;
+  line-height: 24px;
 }
 .storeCard {
     display: flex;
