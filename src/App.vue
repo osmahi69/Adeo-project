@@ -20,7 +20,7 @@
         <template v-slot:extension>
           <v-tabs align-with-title>
             <v-tab @click="goToHome()">HOME</v-tab>
-            <v-tab @click="goToStore()">STORE</v-tab>
+            <v-tab @click="goToStore()">NEW STORE</v-tab>
           </v-tabs>
         </template>
       </v-app-bar>
