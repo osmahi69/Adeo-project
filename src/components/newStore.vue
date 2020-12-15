@@ -19,35 +19,7 @@
                 {{ randomNumber }}
               </v-list-item-title>
               <v-list-item-title class="fileInput">
-                <v-file-input
-                  v-model="files"
-                  class="fileInput"
-                  color="deep-purple accent-4"
-                  counter
-                  multiple
-                  placeholder="Select your file"
-                  prepend-icon="mdi-paperclip"
-                  :show-size="1000"
-                >
-                  <template v-slot:selection="{ index, text }">
-                    <v-chip
-                      v-if="index < 2"
-                      color="deep-purple accent-4"
-                      dark
-                      label
-                      small
-                    >
-                      {{ text }}
-                    </v-chip>
-
-                    <span
-                      v-else-if="index === 2"
-                      class="overline grey--text text--darken-3 mx-2"
-                    >
-                      +{{ files.length - 2 }} File(s)
-                    </span>
-                  </template>
-                </v-file-input>
+                    <InputFile />
               </v-list-item-title>
               <v-list-item-title class="data">
               </v-list-item-title>
@@ -55,19 +27,24 @@
           </div>
         </v-list-item-content>
       </v-list-item>
+      <v-btn> Send </v-btn>
     </v-container>
   </div>
 </template>
 
 <script>
+import InputFile from './InputFile'
 export default {
   name: 'newStore',
+  components: {
+    InputFile
+  },
   data () {
     return {
-      files: [],
       data: ['Number of your new store:', 'Add your excel field']
     }
   },
+
   computed: {
     randomNumber () {
       return Math.floor(Math.random() + 100)
