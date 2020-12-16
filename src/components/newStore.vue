@@ -19,71 +19,56 @@
                 {{ randomNumber }}
               </v-list-item-title>
               <v-list-item-title class="fileInput">
-                <v-file-input
-                  v-model="files"
-                  class="fileInput"
-                  color="deep-purple accent-4"
-                  counter
-                  multiple
-                  placeholder="Select your file"
-                  prepend-icon="mdi-paperclip"
-                  :show-size="1000"
-                >
-                  <template v-slot:selection="{ index, text }">
-                    <v-chip
-                      v-if="index < 2"
-                      color="deep-purple accent-4"
-                      dark
-                      label
-                      small
-                    >
-                      {{ text }}
-                    </v-chip>
-
-                    <span
-                      v-else-if="index === 2"
-                      class="overline grey--text text--darken-3 mx-2"
-                    >
-                      +{{ files.length - 2 }} File(s)
-                    </span>
-                  </template>
-                </v-file-input>
+                <InputFile />
               </v-list-item-title>
-              <v-list-item-title class="data">
-              </v-list-item-title>
+              <v-list-item-title class="data"> </v-list-item-title>
             </div>
           </div>
         </v-list-item-content>
       </v-list-item>
+      <div class="btn">
+      <v-btn  @click="goToStoreDetails" large color="blue" >  Store details </v-btn>
+      </div>
     </v-container>
   </div>
 </template>
 
 <script>
+import InputFile from "./InputFile";
 export default {
-  name: 'newStore',
-  data () {
+  name: "newStore",
+  components: {
+    InputFile,
+  },
+  data() {
     return {
-      files: [],
-      data: ['Number of your new store:', 'Add your excel field']
+      data: ["Number of your new store:", "Add your excel field"],
+    };
+  },
+  methods: {
+    goToStoreDetails () {
+    this.$router.push('/newStore/details')
     }
   },
   computed: {
-    randomNumber () {
-      return Math.floor(Math.random() + 100)
-    }
-  }
-}
+    randomNumber() {
+      return Math.floor(Math.random() + 100);
+    },
+  },
+};
 </script>
 
 <style>
 .displayFlex {
-  display: flex
+  display: flex;
 }
 .number {
   margin-top: 24px;
   margin-left: 36px;
   color: grey;
+}
+.btn {
+  text-align: center;
 }
 .newStore {
   padding: 32px;
@@ -98,12 +83,12 @@ export default {
   color: black;
 }
 .data {
-   margin-top: 24px;
+  margin-top: 24px;
   margin-left: 10px;
   color: grey;
 }
 .title {
- color: #452f85;
+  color: #452f85;
   padding: 0px;
   font-size: 18px;
   font-weight: 900 !important;
