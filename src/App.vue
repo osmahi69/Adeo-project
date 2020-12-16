@@ -33,6 +33,7 @@
 </template>
 <script>
 import stores from '@/assets/data/stores.json'
+import store from '@/assets/data/store.json'
 import user from '@/assets/data/user.json'
 import { mapState } from 'vuex'
 
@@ -51,6 +52,7 @@ export default {
   },
   mounted () {
     this.$store.dispatch('stores/setValue', { list: stores })
+    this.$store.dispatch('store/setValue', { list: store })
     this.$store.dispatch('user/setValue', { list: user })
   }
 }

@@ -19,48 +19,56 @@
                 {{ randomNumber }}
               </v-list-item-title>
               <v-list-item-title class="fileInput">
-                    <InputFile />
+                <InputFile />
               </v-list-item-title>
-              <v-list-item-title class="data">
-              </v-list-item-title>
+              <v-list-item-title class="data"> </v-list-item-title>
             </div>
           </div>
         </v-list-item-content>
       </v-list-item>
-      <v-btn> Send </v-btn>
+      <div class="btn">
+      <v-btn  @click="goToStoreDetails" large color="blue" >  Store details </v-btn>
+      </div>
     </v-container>
   </div>
 </template>
 
 <script>
-import InputFile from './InputFile'
+import InputFile from "./InputFile";
 export default {
-  name: 'newStore',
+  name: "newStore",
   components: {
-    InputFile
+    InputFile,
   },
-  data () {
+  data() {
     return {
-      data: ['Number of your new store:', 'Add your excel field']
+      data: ["Number of your new store:", "Add your excel field"],
+    };
+  },
+  methods: {
+    goToStoreDetails () {
+    this.$router.push('/newStore/details')
     }
   },
-
   computed: {
-    randomNumber () {
-      return Math.floor(Math.random() + 100)
-    }
-  }
-}
+    randomNumber() {
+      return Math.floor(Math.random() + 100);
+    },
+  },
+};
 </script>
 
 <style>
 .displayFlex {
-  display: flex
+  display: flex;
 }
 .number {
   margin-top: 24px;
   margin-left: 36px;
   color: grey;
+}
+.btn {
+  text-align: center;
 }
 .newStore {
   padding: 32px;
@@ -75,12 +83,12 @@ export default {
   color: black;
 }
 .data {
-   margin-top: 24px;
+  margin-top: 24px;
   margin-left: 10px;
   color: grey;
 }
 .title {
- color: #452f85;
+  color: #452f85;
   padding: 0px;
   font-size: 18px;
   font-weight: 900 !important;

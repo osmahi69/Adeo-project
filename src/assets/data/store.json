@@ -1,0 +1,114 @@
+[
+  {
+    "r": 1,
+    "sr": 1,
+    "t": 1,
+    "Libelle": "ECHELLE SIMPLE CONTRE UN MUR",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 1,
+    "t": 2,
+    "Libelle": "ECHELLES",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 1,
+    "t": 10,
+    "Libelle": "ECHELLE MULTI-FNS ARTICULEE",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 1,
+    "t": 12,
+    "Libelle": "ECHELLE TRANS SANS APPUI",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 1,
+    "t": 13,
+    "Libelle": "MARKETPLACE",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 1,
+    "t": 15,
+    "Libelle": "Code 49",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 2,
+    "t": 1,
+    "Libelle": "CHAUX",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 3,
+    "t": 1,
+    "Libelle": "ECHELLE SIMPLE CONTRE UN MUR",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 4,
+    "t": 1,
+    "Libelle": "CODES 48 ET HISTORIQUES",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 5,
+    "t": 1,
+    "Libelle": "PILIERS MURETS",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 6,
+    "t": 1,
+    "Libelle": "PDS MISE EN OEUVRE/FINITION",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 7,
+    "t": 1,
+    "Libelle": "BLOCS PORTEURS",
+    "Numero": ""
+  },
+  {
+    "r": 1,
+    "sr": 8,
+    "t": 1,
+    "Libelle": "BOIS SEC ET LAMELLE-COLLE",
+    "Numero": ""
+  },
+  {
+    "r": 2,
+    "sr": 1,
+    "t": 1,
+    "Libelle": "MORTIER COLLE CARRELAGE",
+    "Numero": ""
+  },
+  {
+    "r": 4,
+    "sr": 1,
+    "t": 1,
+    "Libelle": "BETON DE CONSTRUCTION",
+    "Numero": ""
+  },
+  {
+    "r": 5,
+    "sr": 1,
+    "t": 1,
+    "Libelle": "ADJUVANTS",
+    "Numero": ""
+  }
+]
