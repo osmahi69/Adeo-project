@@ -4,7 +4,7 @@
       <v-card-title class="title">
         {{ bu }}
       </v-card-title>
-      <v-btn color="#452f85" @click="goToNewStore(1)">
+      <v-btn color="#053e1f" @click="goToNewStore(1)">
         <v-icon color="white" class="pr-1"> add_circle_outline</v-icon>
         <span class="buttonTitle"> Create store </span>
       </v-btn>
@@ -55,7 +55,7 @@ export default {
   color: white;
 }
 .title {
-  color: #452f85;
+  color:#053e1f;
   padding: 0px;
   font-size: 18px;
   font-weight: 900 !important;

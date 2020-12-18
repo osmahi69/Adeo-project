@@ -1,8 +1,7 @@
-//https://github.com/cscan/vue-excel-editor
 <template>
   <div id="app">
     <v-app class="app">
-      <v-app-bar color="#F0F8FF">
+      <v-app-bar color="#cbe3b5">
         <v-avatar @click="goToHome()" class="avatar" >
           <v-img
             :src="require('./assets/Adeo_logo.jpg')"
@@ -15,7 +14,7 @@
         >
         <v-spacer> </v-spacer>
         <div>
-        <v-icon color="blue">person</v-icon>
+        <v-icon color="green">person</v-icon>
         <span class="name"> {{user.list[0].name}}</span>
         </div>
         <template v-slot:extension>
@@ -59,17 +58,16 @@ export default {
 </script>
 <style>
 .name {
-  color:blue;
+  color:#158110;
   padding-right: 10px;
-  text-shadow: 0px 0px 5px red;
+  text-shadow: 0px 0px 5px #062b35;
 }
 .avatar {
   cursor: pointer;
-  text-shadow: 0px 0px 5px red;
 }
 .headerTitle {
-  color: blue;
+  color: #158110;
   font-family: Helvetica;
-  text-shadow: 0px 0px 5px red;
+  text-shadow: 0px 0px 5px #062b35;
 }
 </style>

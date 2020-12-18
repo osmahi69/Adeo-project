@@ -53,7 +53,7 @@ export default {
 }
 .title {
   font-weight: 900;
-  color: blue;
+  color:#053e1f;
 }
 .metaData {
   font-weight: 700;
