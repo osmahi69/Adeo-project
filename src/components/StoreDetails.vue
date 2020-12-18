@@ -71,7 +71,7 @@ export default {
 
 <style>
 .title {
-  color: #452f85;
+  color:#053e1f;
   padding: 0px;
   font-size: 18px;
   font-weight: 900 !important;
@@ -81,7 +81,7 @@ export default {
 .storeDetails {
   padding: 32px;
   background-color: #fff;
-  border: 8px solid #7756fd;
+  border: 8px solid #41a017;
   border-radius: 4px;
   margin-top: 30px;
 }

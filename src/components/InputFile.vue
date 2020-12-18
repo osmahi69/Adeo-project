@@ -30,15 +30,9 @@
 <script>
 
 export default {
-  data() {
-    return {
-      file: null,
-    };
-  },
-  methods: {
-    onChange(event) {
-      this.file = event.target.files ? event.target.files[0] : null;
-    },
+  name:'InputFile',
+  props: {
+    file: []
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
       <v-row class="listCard">
         <div class="storeCard"  v-for="store in stores.list" :key="store.id" @click="goToStore(store.id)">
-          <v-icon color="blue" large>house</v-icon>
+          <v-icon color="#053e1f" large>house</v-icon>
           <v-card-title class="title">
             Store {{store.storeNumber}}
           </v-card-title>
@@ -45,7 +45,7 @@ export default {
     padding: 0px;
 }
 .title {
-  color: #452f85;
+  color:#053e1f;
   padding: 0px;
   font-size: 18px;
   font-weight: 900 !important;
@@ -58,7 +58,7 @@ export default {
     box-shadow: 0 3px 6px rgba(33,41,52,.15), 0 2px 4px rgba(33,41,52,.12);
     border-radius: 4px;
     background-color: #fff;
-    border-left: 8px solid #F0F8FF;
+    border-left: 8px solid#41a017;
     padding: 24px 24px 24px 16px;
     transition: border-left .1s ease-in-out;
     cursor: pointer;

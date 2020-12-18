@@ -19,15 +19,15 @@
                 {{ randomNumber }}
               </v-list-item-title>
               <v-list-item-title class="fileInput">
-                <InputFile />
+                <InputFile :file="file"/>
               </v-list-item-title>
               <v-list-item-title class="data"> </v-list-item-title>
             </div>
           </div>
         </v-list-item-content>
       </v-list-item>
-      <div class="btn">
-      <v-btn  @click="goToStoreDetails" large color="blue" >  Store details </v-btn>
+      <div class="btn" v-if="file">
+      <v-btn  @click="goToStoreDetails" large color="#78be20" >  Store details </v-btn>
       </div>
     </v-container>
   </div>
@@ -43,6 +43,7 @@ export default {
   data() {
     return {
       data: ["Number of your new store:", "Add your excel field"],
+      file: []
     };
   },
   methods: {
@@ -73,7 +74,7 @@ export default {
 .newStore {
   padding: 32px;
   background-color: #fff;
-  border: 8px solid #7756fd;
+  border: 8px solid #41a017;
   border-radius: 4px;
   margin-top: 30px;
 }
@@ -88,7 +89,7 @@ export default {
   color: grey;
 }
 .title {
-  color: #452f85;
+  color:#053e1f;
   padding: 0px;
   font-size: 18px;
   font-weight: 900 !important;
